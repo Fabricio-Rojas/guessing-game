@@ -10,7 +10,7 @@
 /*-------------------------- Body BG --------------------------*/
 
 body {
-    background-color: #1a1d28;
+    background-color: #40e0d0;
     height: auto;
 }
 
@@ -20,6 +20,24 @@ h2 {
     color: #fff;
     text-align: center;
     margin-top: 60px;
-    font-weight: 400;
+    font-weight: 700;
+    font-size: 30px;
 }
+
+/*-------------------------- Retry Button --------------------------*/
+
+#retry {
+    background-color: #fff;
+    position: fixed;
+    top: 30px;
+    right: 40px;
+    border-radius: 10px;
+    width: 125px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #40e0d0;
+}
+
+/*--------------------- Number Display and Input ---------------------*/
 
