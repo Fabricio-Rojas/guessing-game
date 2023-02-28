@@ -27,13 +27,20 @@ function getRandNum() {
 };
 getRandNum();
 
+// Guess Counter
+let c = 0;
+
+// Retry Button
 retryBtn.addEventListener('click', function() {
     retryBtn.style.display = "none";
     numDisplay.innerText = '';
     numInp.value = '';
+    guessCount.innerText = '';
+    c = 0;
     getRandNum();
 });
 
+// Number Guesser
 numDisplay.addEventListener('click', function() {
     let a = numInp.value.trim();
 
@@ -44,10 +51,14 @@ numDisplay.addEventListener('click', function() {
         retryBtn.style.display = "block";
         } else if (a <= b) {
             numInp.value = 'My number is bigger';
+            c++;
+            guessCount.innerText = `Guesses: ${c}`
         } else if (a >= b) {
+            c++;
+            guessCount.innerText = `Guesses: ${c}`
             numInp.value = 'My number is smaller!';
         }
     } else {
-        numInp.value = 'Please enter numbers!'
+        numInp.value = 'Please enter valid numbers!'
     }
-})
+});
