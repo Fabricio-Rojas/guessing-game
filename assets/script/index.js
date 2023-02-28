@@ -35,8 +35,8 @@ retryBtn.addEventListener('click', function() {
     retryBtn.style.display = "none";
     numDisplay.innerText = '';
     numInp.value = '';
-    guessCount.innerText = '';
     c = 0;
+    guessCount.innerText = `Guesses: ${c}`;
     getRandNum();
 });
 
