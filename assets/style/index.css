@@ -19,7 +19,7 @@ body {
 h2 {
     color: #fff;
     text-align: center;
-    margin-top: 60px;
+    margin-top: 50px;
     font-weight: 700;
     font-size: 30px;
 }
@@ -37,7 +37,43 @@ h2 {
     font-size: 18px;
     font-weight: 700;
     color: #40e0d0;
+    display: none;
+}
+
+/*---------------------------- Guess Count ----------------------------*/
+
+.guess-count {
+    margin-top: 100px;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
 }
 
 /*--------------------- Number Display and Input ---------------------*/
 
+.numb {
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 30px auto;
+    line-height: 150px;
+    text-align: center;
+    color: #40e0d0;
+    font-size: 90px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#guess-inp {
+    display: block;
+    height: 40px;
+    width: 300px;
+    padding: 0 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+}
